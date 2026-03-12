@@ -9,8 +9,8 @@ body {
 }
 
 body > * {
-  width: 92%;
-  max-width: 78rem;
+  width: 94%;
+  max-width: 90rem;
   margin: 0 auto;
 }
 
@@ -37,8 +37,8 @@ body > ul:first-of-type a:hover {
 h1 {
   color: #102a43;
   font-size: 2.7rem;
-  margin-bottom: 1rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -69,7 +69,7 @@ img {
 video {
   display: block;
   width: 100%;
-  max-width: 52rem;
+  max-width: 58rem;
   height: auto;
   border-radius: 0.9rem;
   margin: 1rem auto;
@@ -80,8 +80,9 @@ figure {
   background-color: #ffffff;
   border: 0.08rem solid #d9e2ec;
   border-radius: 1rem;
-  padding: 1.25rem;
+  padding: 1.25rem 1.5rem;
   margin: 1.5rem auto;
+  box-sizing: border-box;
 }
 
 figcaption {
@@ -91,25 +92,23 @@ figcaption {
   text-align: center;
 }
 
-.home-page > h2,
-.home-page > p,
-.home-page > ul:not(:first-of-type),
-.home-page > img,
-.resume-page > h2,
-.resume-page > h3,
-.resume-page > p,
-.resume-page > ul:not(:first-of-type),
-.valorant-page > h2,
-.valorant-page > p,
-.valorant-page > ul:not(:first-of-type),
-.valorant-page > img,
-.valorant-page > video,
-.valorant-page > figure {
+.home-page ul:not(:first-of-type),
+.resume-page ul:not(:first-of-type),
+.valorant-page ul:not(:first-of-type) {
+  list-style: disc;
   background-color: #ffffff;
   border: 0.08rem solid #d9e2ec;
   border-radius: 1rem;
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 1.75rem;
   margin-bottom: 1.25rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.home-page li,
+.resume-page li,
+.valorant-page li {
+  margin-bottom: 0.6rem;
 }
 
 .home-page {
@@ -117,17 +116,22 @@ figcaption {
 }
 
 .home-page > * {
-  max-width: 56rem;
+  max-width: 68rem;
 }
 
 .home-page img {
-  max-width: 20rem;
-  padding: 0;
+  max-width: 22rem;
 }
 
 .home-page p:first-of-type {
+  background-color: #ffffff;
+  border: 0.08rem solid #d9e2ec;
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
   font-size: 1.1rem;
   text-align: center;
+  margin-bottom: 1.25rem;
+  box-sizing: border-box;
 }
 
 .resume-page {
@@ -135,13 +139,24 @@ figcaption {
 }
 
 .resume-page > * {
-  max-width: 760px;
+  max-width: 900px;
 }
 
 .resume-page h1 + p,
 .resume-page h1 + p + p {
   text-align: center;
   color: #52606d;
+}
+
+.resume-page h2 + ul,
+.resume-page h3 + p,
+.resume-page h3 + p + ul {
+  background-color: #ffffff;
+  border: 0.08rem solid #d9e2ec;
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  box-sizing: border-box;
 }
 
 .resume-page h3 + p {
@@ -154,20 +169,31 @@ figcaption {
 }
 
 .valorant-page > * {
-  max-width: 58rem;
+  max-width: 72rem;
+}
+
+.valorant-page p:first-of-type,
+.valorant-page h2 + p {
+  background-color: #ffffff;
+  border: 0.08rem solid #d9e2ec;
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  box-sizing: border-box;
 }
 
 .valorant-page img[src*="img3"],
 .valorant-page img[src*="img4"] {
-  max-width: 46rem;
+  max-width: 50rem;
 }
 
 .valorant-page img[src*="img1"] {
-  max-width: 22rem;
+  max-width: 24rem;
 }
 
-.valorant-page p:first-of-type {
-  font-size: 1.08rem;
+.valorant-page video,
+.valorant-page figure {
+  max-width: 58rem;
 }
 
 @media screen and (max-width: 48rem) {
@@ -185,20 +211,16 @@ figcaption {
     width: 94%;
   }
 
-  .home-page > h2,
-  .home-page > p,
-  .home-page > ul:not(:first-of-type),
-  .home-page > img,
-  .resume-page > h2,
-  .resume-page > h3,
-  .resume-page > p,
-  .resume-page > ul:not(:first-of-type),
-  .valorant-page > h2,
-  .valorant-page > p,
-  .valorant-page > ul:not(:first-of-type),
-  .valorant-page > img,
-  .valorant-page > video,
-  .valorant-page > figure {
-    padding: 1rem;
+  .home-page ul:not(:first-of-type),
+  .resume-page ul:not(:first-of-type),
+  .valorant-page ul:not(:first-of-type),
+  .home-page p:first-of-type,
+  .resume-page h2 + ul,
+  .resume-page h3 + p,
+  .resume-page h3 + p + ul,
+  .valorant-page p:first-of-type,
+  .valorant-page h2 + p,
+  figure {
+    padding: 1rem 1.1rem;
   }
 }
