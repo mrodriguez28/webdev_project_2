@@ -3,13 +3,14 @@ body {
   color: #1f2933;
   font-family: "Inter", Arial, sans-serif;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.7;
   margin: 0;
   padding: 0 0 3rem 0;
 }
 
 body > * {
-  width: 90%;
+  width: 92%;
+  max-width: 78rem;
   margin: 0 auto;
 }
 
@@ -18,9 +19,9 @@ body > ul:first-of-type {
   justify-content: center;
   gap: 2rem;
   background-color: #ffffff;
-  border-bottom: 0.1rem solid #d9e2ec;
+  border-bottom: 0.08rem solid #d9e2ec;
   padding: 1.25rem 0;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 body > ul:first-of-type a {
@@ -35,24 +36,20 @@ body > ul:first-of-type a:hover {
 
 h1 {
   color: #102a43;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 h2 {
   color: #243b53;
-  font-size: 1.5rem;
-  margin-top: 2rem;
+  font-size: 1.45rem;
   margin-bottom: 0.75rem;
-  border-bottom: 0.12rem solid #bcccdc;
-  padding-bottom: 0.3rem;
 }
 
 h3 {
   color: #334e68;
-  font-size: 1.15rem;
-  margin-top: 1.25rem;
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -64,28 +61,27 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  border-radius: 0.75rem;
+  border-radius: 0.9rem;
   margin: 1rem auto;
-  box-shadow: 0 0.4rem 1rem rgba(15, 23, 42, 0.12);
+  box-shadow: 0 0.35rem 1rem rgba(15, 23, 42, 0.08);
 }
 
 video {
   display: block;
   width: 100%;
-  max-width: 50rem;
+  max-width: 52rem;
   height: auto;
-  margin: 1rem auto 2rem auto;
-  border-radius: 0.75rem;
-  box-shadow: 0 0.4rem 1rem rgba(15, 23, 42, 0.12);
+  border-radius: 0.9rem;
+  margin: 1rem auto;
+  box-shadow: 0 0.35rem 1rem rgba(15, 23, 42, 0.08);
 }
 
 figure {
   background-color: #ffffff;
-  border: 0.1rem solid #d9e2ec;
+  border: 0.08rem solid #d9e2ec;
   border-radius: 1rem;
-  margin: 2rem auto;
-  padding: 1rem;
-  max-width: 42rem;
+  padding: 1.25rem;
+  margin: 1.5rem auto;
 }
 
 figcaption {
@@ -95,33 +91,38 @@ figcaption {
   text-align: center;
 }
 
-.home-page ul:not(:first-of-type),
-.resume-page ul:not(:first-of-type),
-.valorant-page ul:not(:first-of-type) {
-  list-style: disc;
+.home-page > h2,
+.home-page > p,
+.home-page > ul:not(:first-of-type),
+.home-page > img,
+.resume-page > h2,
+.resume-page > h3,
+.resume-page > p,
+.resume-page > ul:not(:first-of-type),
+.valorant-page > h2,
+.valorant-page > p,
+.valorant-page > ul:not(:first-of-type),
+.valorant-page > img,
+.valorant-page > video,
+.valorant-page > figure {
   background-color: #ffffff;
-  border: 0.1rem solid #d9e2ec;
-  border-radius: 0.85rem;
-  padding: 1rem 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.home-page li,
-.resume-page li,
-.valorant-page li {
-  margin-bottom: 0.6rem;
+  border: 0.08rem solid #d9e2ec;
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .home-page {
-  width: 92%;
+  width: 100%;
 }
 
 .home-page > * {
-  max-width: 50rem;
+  max-width: 56rem;
 }
 
 .home-page img {
-  max-width: 18rem;
+  max-width: 20rem;
+  padding: 0;
 }
 
 .home-page p:first-of-type {
@@ -149,24 +150,24 @@ figcaption {
 }
 
 .valorant-page {
-  width: 92%;
+  width: 100%;
 }
 
 .valorant-page > * {
-  max-width: 52rem;
+  max-width: 58rem;
 }
 
 .valorant-page img[src*="img3"],
 .valorant-page img[src*="img4"] {
-  max-width: 42rem;
+  max-width: 46rem;
 }
 
 .valorant-page img[src*="img1"] {
-  max-width: 20rem;
+  max-width: 22rem;
 }
 
 .valorant-page p:first-of-type {
-  font-size: 1.1rem;
+  font-size: 1.08rem;
 }
 
 @media screen and (max-width: 48rem) {
@@ -180,11 +181,24 @@ figcaption {
     font-size: 2rem;
   }
 
-  h2 {
-    font-size: 1.3rem;
-  }
-
   body > * {
     width: 94%;
+  }
+
+  .home-page > h2,
+  .home-page > p,
+  .home-page > ul:not(:first-of-type),
+  .home-page > img,
+  .resume-page > h2,
+  .resume-page > h3,
+  .resume-page > p,
+  .resume-page > ul:not(:first-of-type),
+  .valorant-page > h2,
+  .valorant-page > p,
+  .valorant-page > ul:not(:first-of-type),
+  .valorant-page > img,
+  .valorant-page > video,
+  .valorant-page > figure {
+    padding: 1rem;
   }
 }
